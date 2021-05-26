@@ -1,0 +1,40 @@
+<div *ngIf="product.title" class="row" >
+    <div class="col-md-5">
+      <img style="padding: 20px;" *ngIf="product.imageUrl" class="card-img-top" [src]="product.imageUrl" alt="{{ product.title }}">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <h3>{{ product.title }}</h3>
+        <p class="price card-text">{{ product.price | currency: 'USD': true }}</p>
+        <!-- On rows -->
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="table-active">Lorem ipsum dolor sit.</td>
+  
+  <td class="table-primary">Lorem ipsum dolor sit.</td>
+  <td class="table-secondary">Lorem ipsum dolor sit.</td>
+  <td class="table-success">Lorem, ipsum dolor.</td>
+  <td class="table-danger">Lorem ipsum dolor sit.</td>
+  <td class="table-warning">Lorem ipsum dolor sit.</td>
+  <td class="table-info">Lorem, ipsum dolor.</td>
+  <td class="table-light">Lorem ipsum dolor sit.</td>
+  <td class="table-dark">Lorem, ipsum dolor.</td>
+</tr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quia, eaque tempora eligendi facere excepturi facilis earum inventore harum dolores. Maxime, aspernatur. Voluptatum, sit, dolorem.</p>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deleniti non tempora soluta perferendis. Beatae et amet nulla esse. Asperiores ab adipisci velit quibusdam? Soluta, maiores. Quisquam aut deleniti odit ad accusantium est eius, odio officiis molestiae quidem consequuntur impedit, in cum nesciunt pariatur, placeat expedita repellendus dolores harum? Porro facere perspiciatis totam nulla dolorum repellendus laborum consequatur molestias. Sint vitae recusandae beatae molestiae. Odit aliquam dolor possimus temporibus, vero asperiores soluta, esse quam iure commodi officiis excepturi quidem nisi iste. Officiis, omnis totam praesentium rem sed in natus dignissimos enim sunt laudantium culpa, harum molestias, quae voluptates deleniti nisi.
+    <div class="row" *ngIf="cart$ | async as cart">
+      <div *ngIf="showActions && shoppingCart" class="card-footer">
+        <button
+        *ngIf="shoppingCart.getQuantity(product)===0; else updateQuantity"
+        (click)="addToCart()"
+        class="btn btn-secondary btn-block">Add to cart</button>
+        <ng-template #updateQuantity>
+          <product-quantity [product]="product" [shopping-carts]="shoppingCart">
+          </product-quantity>
+        </ng-template>
+      </div>
+      </div>
+  </div>
+  </div>

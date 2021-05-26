@@ -1,0 +1,80 @@
+
+.sticky-top {
+  top: 80px;
+  margin-bottom: 15px;
+}
+.menu{
+  width: 100%;
+}
+.menu ul{
+  padding-top: 12px;
+}
+.menu ul li{
+  display: inline;
+}
+.menu ul li a{
+  font-weight: bold;
+  list-style: none;
+  padding-right: 30px;
+  text-decoration: none;
+  color: antiquewhite;
+}
+.menu ul li a:hover{
+	color: #000;
+}
+.all{
+	position: absolute;
+	top: 7px;
+	right: 0;
+	font-size: 12px;
+	color: #18487a;
+	text-decoration: none;
+}
+.news-hot{
+	padding: 0px 15px 5px 15px;
+}
+.all:hover{
+	text-decoration: none;
+}
+.news2{
+	display: block;
+
+}
+.news2-list{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.news2-list ul li{
+	padding-bottom: 8px;
+	margin-bottom: 11px;
+	border-bottom: 1px solid #e6e6e6;
+	float: left;
+	width: 100%;
+	display: block;
+}
+.news-list ul li a{
+	text-decoration: none;
+	color: black;
+}
+.news-list ul li a span:hover{
+	text-decoration: none;
+	color: red;
+}
+.news2-title{
+	margin-bottom: 4px;
+	line-height: 1.6;
+	overflow: hidden;
+	display: block;
+	font-size: 13px;
+	height: 39px;
+	padding-left: 15px;
+	color: black;
+}
+.news2-time{
+	color: #bdc3c7;
+	font-size: 10px;
+	display: block;
+	overflow: hidden;
+	padding-left: 15px;
+}

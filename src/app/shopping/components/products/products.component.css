@@ -1,0 +1,17 @@
+.fitter{
+    width: 100%;
+    display: inline-flex;
+    width: 100%;
+    height: 50px;
+    background-color: #f39c12;  
+    margin-bottom: 9px;
+}
+.search{
+    margin: auto;
+}
+.footer{
+    width: 100%;
+}
+.content{
+    padding: 15px;
+}
